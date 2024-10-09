@@ -15,7 +15,8 @@ class ShoppingCart:
         return sum(self.prices)
 
     def has_discount(self):
-        return any(price >= 100 for price in self.prices)
+        discount_threshold = 100
+        return any(price >= discount_threshold for price in self.prices)
 
     def number_of_products(self):
         return len(self.prices)
