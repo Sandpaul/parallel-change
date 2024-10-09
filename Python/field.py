@@ -20,7 +20,7 @@ class ShoppingCart:
         return self.price >= 100
 
     def number_of_products(self):
-        return 1
+        return len(self.prices)
 
 
 class SomeConsumer():
