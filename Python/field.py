@@ -17,7 +17,7 @@ class ShoppingCart:
         return self.price
 
     def has_discount(self):
-        return self.price >= 100
+        return any(price >= 100 for price in self.prices)
 
     def number_of_products(self):
         return len(self.prices)
