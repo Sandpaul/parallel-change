@@ -14,7 +14,7 @@ class ShoppingCart:
         self.price = price
 
     def calculate_total_price(self):
-        return self.price
+        return sum(self.prices)
 
     def has_discount(self):
         return any(price >= 100 for price in self.prices)
