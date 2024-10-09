@@ -1,4 +1,6 @@
 class ShoppingCart:
+    def __init__(self) -> None:
+        self.prices = []
     price = 0
 
     '''
